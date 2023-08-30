@@ -1,0 +1,312 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+
+
+  .side-container{
+    display: flex;
+    width: 20%;
+    background-color: #D9D9D9;
+    border-radius: 0 15px 15px 0;
+  }
+  .profile-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .language-info {
+    align-items: center;
+    padding: 2%;
+  }
+  .language-info2 {
+    align-items: center;
+    padding-bottom: 2%;
+  }
+  .streak-info{
+    padding-bottom: 5%;
+  }
+ 
+  .profile-card {
+    text-align: center;
+    padding: -1px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    margin: 40% 0 0 0;
+  }
+  
+  .profile-card img {
+    position: absolute;
+    top: -50%; /* Adjust this value */
+    left: 25%; /* Center horizontally */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Make the border-radius half of the width/height */
+    
+  }
+  /* Apply background color and overlay circular profile photo */
+.profile-photo {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden; /* Hide any overflow from the circular shape */
+  /* Set background color */
+  background-color: lightpurple; /* Replace with the desired color */
+
+  /* Center the circular profile photo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -75%; /* Adjust this value */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+}
+
+.profile-photo img {
+  width: 100%; /* Ensure the image covers the container */
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+  .languages-practicing {
+    text-align: center; /* Center-align the content */
+    margin-top: 20px; /* Add some spacing from other content */
+  }
+  
+  .languages-practicing h3 {
+    margin-bottom: 10px; /* Add spacing below the heading */
+  }
+  
+  .languages-practicing ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .languages-practicing li {
+    margin-bottom: 5px; /* Add spacing between language items */
+  }
+
+
+  .logout-button {
+    margin-top: auto;
+    background-color: #57648C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .main-section {
+    padding: 20px;
+    flex: 1;
+  }
+
+
+  
+
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  img {
+    width: 30px;
+    height: 20px;
+    margin-left: 10px;
+  }
+  
+  .topic-cards {
+    display: flex;
+    gap: 10px; /* Add gap between topic cards */
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .topic-card {
+    flex: 0 0 calc(30% - 10px); /* Each card takes 20% of the available width minus gap */
+   /* border: 1px solid #ccc;*/
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transition for transform and box-shadow */
+    display: flex; /* Use flexbox to center-align content */
+    flex-direction: column; /* Align content vertically */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+  }
+  
+  .topic-card img {
+    width: 300px; /* Set the desired width */
+    height: auto;
+    object-fit: contain; /* Maintain aspect ratio and cover the entire space */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    margin: 0 auto;
+  }  
+  
+  .topic-card:hover {
+    transform: scale(1.05); /* Scale up the card on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+  }
+  
+  .topic-card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .topic-card h3 {
+    margin: 0;
+  }  
+
+  h2 {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  
+.next-topic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+  /*border: 1px solid #ccc;*/
+  padding: 40px 100px 100px 100px;
+}
+
+.next-topic a {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px; /* Set the initial font size */
+  transition: font-size 0.3s, text-decoration 0.3s; /* Add transition for smooth effect */
+}
+
+.next-topic a:hover {
+  font-size: 18px; /* Increase font size on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+  
+  .country-flags {
+    display: flex;
+    width: fit-content;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+    gap: 20px; /* Add some spacing between flags */
+    animation: moveFlags linear infinite; /* Apply the animation */
+  }
+  
+  .country-flags img {
+    width: 40px; /* Adjust the width to make the flags bigger */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .flags-container {
+    overflow: hidden; /* Clip anything that goes outside the container */
+    width: 50%; /* Set the width to 50% */
+    margin: 0 auto; /* Center horizontally */
+    /*border: 2px solid #333;  Add a border with color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  @keyframes moveFlags {
+    0% {
+      transform: translateX(100%); /* Move to the right */
+    }
+    100% {
+      transform: translateX(-100%); /* Move back to the left */
+    }
+  }
+
+  
+
+.search-bar {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 70%;
+}
+
+.search-bar button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.fun-cards-container {
+  height: 600px; /* Set the fixed height of the scrolling container */
+  overflow: auto; /* Enable scrolling within the container */
+  /*border: 1px solid #ccc;*/
+  border-radius: 5px;
+}
+.fun-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.fun-card {
+  flex: 0 0 calc(30% - 20px);
+  /*border: 1px solid #ccc;*/
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.fun-card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+
+.fun-card:hover {
+  transform: scale(1.05); /* Scale up the card on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+}
+
+.fun-card h3 {
+  margin: 0;
+}
+
+/* Add any additional styling you want for the new page */
