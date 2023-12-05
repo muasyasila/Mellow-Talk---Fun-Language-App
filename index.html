@@ -3,12 +3,44 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Melo Talk - Fun Language Cards</title>
+<title>Mellow Talk - Fun Language App</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Example button to toggle dark mode -->
+  <button id="darkModeToggleBtn">Toggle Dark Mode</button>
+  <div class="navbar">
+    <div class="logo">
+      <!-- Your logo or app name -->
+      Mellow Talk
+    </div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Learn</a>
+      <a href="#">Profile</a>
+      <a href="#">Settings</a>
+    </div>
+
+      <!-- Animated menu button -->
+  <div class="menu-btn" onclick="toggleMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+    <div class="search-bar">
+      <!-- Your search bar code -->
+      <input type="text" placeholder="Search">
+      <button>Search</button>
+    </div>
+    <div class="user-profile">
+      <!-- Your user profile code -->
+      <img src="images/User-icon.png" alt="User Profile">
+      <span>User's Name</span>
+    </div>
+  </div>
+
   <div class="container">
-    <div class="side-container">
+    <div class="side-container" onmouseover="showSidebar()" onmouseout="hideSidebar()">
       <div class="profile-section">
         <div class="profile-card">
           <img src="images/User-icon.png" alt="User Profile">
@@ -30,7 +62,7 @@
             <!-- Add more languages -->
           </ul>
         </div>
-        <button class="logout-button">Log Out</button>
+        <button class="logout-button" onclick="logout()">Log Out</button>
       </div>
     </div>
     <div class="main-section">
@@ -47,84 +79,34 @@
         </a>
         </div>
         <div class="fun-card">
-          <img src="images/spanish culture.jpg" alt="Fun Card 2">
-          <h3>spanish</h3>
+          <a href="learn.html" target="_self">
+          <img src="images/spanish culture.jpg" alt="Fun Card 1">
+          <h3>Spanish</h3>
+        </a>
         </div>
         <div class="fun-card">
+          <a href="learn.html" target="_self">
+          <img src="images/Dutch.jpg" alt="Fun Card 1">
+          <h3>Dutch</h3>
+        </a>
+        </div>
+        <div class="fun-card">
+          <a href="learn.html" target="_self">
           <img src="images/49716.jpg" alt="Fun Card 1">
           <h3>German</h3>
+        </a>
         </div>
         <div class="fun-card">
-          <img src="images/spanish culture.jpg" alt="Fun Card 2">
-          <h3>spanish</h3>
+          <a href="learn.html" target="_self">
+          <img src="images/spanish culture.jpg" alt="Fun Card 1">
+          <h3>Spanish</h3>
+        </a>
         </div>
         <div class="fun-card">
-          <img src="images/49716.jpg" alt="Fun Card 1">
-          <h3>German</h3>
-        </div>
-        <div class="fun-card">
-          <img src="images/spanish culture.jpg" alt="Fun Card 2">
-          <h3>spanish</h3>
-        </div>
-        <div class="fun-card">
-          <img src="images/49716.jpg" alt="Fun Card 1">
-          <h3>German</h3>
-        </div>
-        <div class="fun-card">
-          <img src="images/spanish culture.jpg" alt="Fun Card 2">
-          <h3>spanish</h3>
-        </div>
-        <div class="fun-card">
-          <img src="images/49716.jpg" alt="Fun Card 1">
-          <h3>German</h3>
-        </div>
-        <div class="fun-card">
-          <img src="images/spanish culture.jpg" alt="Fun Card 2">
-          <h3>spanish</h3>
-        </div>
-        <div class="fun-card">
-          <img src="images/49716.jpg" alt="Fun Card 1">
-          <h3>German</h3>
-        </div>
-        <div class="fun-card">
-          <img src="images/spanish culture.jpg" alt="Fun Card 2">
-          <h3>spanish</h3>
-        </div>
-        <div class="fun-card">
-          <img src="images/49716.jpg" alt="Fun Card 1">
-          <h3>German</h3>
-        </div>
-        <div class="fun-card">
-          <img src="images/spanish culture.jpg" alt="Fun Card 2">
-          <h3>spanish</h3>
-        </div>
-        <div class="fun-card">
-          <img src="images/49716.jpg" alt="Fun Card 1">
-          <h3>German</h3>
-        </div>
-        <div class="fun-card">
-          <img src="images/spanish culture.jpg" alt="Fun Card 2">
-          <h3>spanish</h3>
-        </div>
-        <div class="fun-card">
-          <img src="images/49716.jpg" alt="Fun Card 1">
-          <h3>German</h3>
-        </div>
-        <div class="fun-card">
-          <img src="images/spanish culture.jpg" alt="Fun Card 2">
-          <h3>spanish</h3>
-        </div>
-        <div class="fun-card">
-          <img src="images/49716.jpg" alt="Fun Card 1">
-          <h3>German</h3>
-        </div>
-        <div class="fun-card">
-          <img src="images/spanish culture.jpg" alt="Fun Card 2">
-          <h3>spanish</h3>
-        </div>
-        <div class="fun-card">
-          <img src="images/49716.jpg" alt="Fun Card 1">
-          <h3>German</h3>
+          <a href="learn.html" target="_self">
+          <img src="images/Dutch.jpg" alt="Fun Card 1">
+          <h3>Dutch</h3>
+        </a>
         </div>
         <!-- Add more fun cards -->
       </div>
